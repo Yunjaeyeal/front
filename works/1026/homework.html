@@ -1,0 +1,128 @@
+<html>
+<head>
+  <title>회원가입</title>
+</head>
+<body>
+  <h2>사회인야구 회원가입 정보입력</h2>
+  <form name="myfrom" method="post" action="#">
+    <table border cellpadding="10px" cellspacing="0px">
+      <tr>
+        <td>
+          <label for="name">이름</label>
+        </td> 
+        <td>
+          <input type="text" name="name" id="name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id">ID</label>
+        </td>
+        <td>
+          <input type="text" name="id" id="id">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="pwd">비밀번호</label>
+        </td>
+        <td>
+          <input type="password" name="pwd" id="pwd">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="mail">메일주소</label>
+        </td>
+        <td>
+          <input type="mail" name="mail" id="mail">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="age">나이(15세이상 가입가능)</label>
+        </td>
+        <td>
+          <input type="number" name="age" id="age" size="3" min="15" max="99" />
+        </td>
+      </tr>
+       <tr>
+        <td>
+          가입날짜
+        </td>
+        <td>
+         <input type="date" name="birthday" id="birthday"/>
+        </td>
+      </tr>
+      <tr>
+        <td>선호 포지션</td>
+        <td>
+      <input type="checkbox" name="hobby" id="hobby1 value="1루수"/>1루수
+      <input type="checkbox" name="hobby" id="hobby2 value="2루수"/>2루수
+      <input type="checkbox" name="hobby" id="hobby3 value="3루수"/>3루수
+      <input type="checkbox" name="hobby" id="hobby4 value="유격수"/>유격수
+      <input type="checkbox" name="hobby" id="hobby5 value="포수"/>포수
+      <input type="checkbox" name="hobby" id="hobby6 value="좌익수"/>좌익수
+      <input type="checkbox" name="hobby" id="hobby7 value="중견수"/>중견수
+      <input type="checkbox" name="hobby" id="hobby7 value="우익수"/>우익수
+      <input type="checkbox" name="hobby" id="hobby7 value="투수"/>투수
+        </td>
+      </tr>
+       <tr>
+        <td>좋아하는 구단</td>
+        <td>
+        <input type ="radio" name="team" id="team1" value"DooSanbears" checked/>두산베어스
+        <input type ="radio" name="team" id="team2" value"LGtwins" />엘지트윈스
+        <input type ="radio" name="team" id="team3" value"Kiatigers" />기아타이거즈
+        <input type ="radio" name="team" id="team4" value"Ncdainos" />엔씨다이노스
+        <input type ="radio" name="team" id="team5" value"lottegiants" />롯데자이언츠
+        <input type ="radio" name="team" id="team6" value"sansunglions" />삼성라이온즈
+        <input type ="radio" name="team" id="team7" value"ssgrandes" />SSG랜더스
+        <input type ="radio" name="team" id="team8" value"Ktwiz" />KT위즈
+        <input type ="radio" name="team" id="team9" value"HanhwaEagels" />한화이글스
+        <input type ="radio" name="team" id="team10" value"KIwomheros" />키움히어로즈
+        </td>
+      </tr>
+      <tr>
+        <td>
+          회원 등록 현황
+        </td>
+        <td>
+           <meter value="70" min="0" max="100"> </meter><br/>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          자기소개
+        </td>
+        <td>
+            <textarea rows="5" cols="50" name="content" id="content" placeholder="자기소개"> </textarea> 
+        </td>
+      </tr>
+      
+       <tr>
+        <td>
+          회원가입 약관동의
+        </td>
+        
+        <td>
+             <input type="checkbox" name="agree" id="agree1 value="동의"/>동의
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td colspan="2" align="center">
+        <input type="submit" value="회원가입" />
+        <input type="reset" value="다시입력" />
+        <!--<input type="button" value="회원가입"/>->>
+        </td>
+        </tr>
+      
+      
+    </table>
+  </form>
+  
+</body>
+</html>
